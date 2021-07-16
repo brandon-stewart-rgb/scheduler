@@ -74,3 +74,15 @@ textarea {
 
 
 
+body .row .list-group span.form-control {
+  display: block;
+  width: 100%;
+  height: 100% !important;
+}
+
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
