@@ -17,9 +17,12 @@ textarea {
   border: 1px solid rgb(150, 150, 150);
   border-right: 0;
   padding: 10px;
-  width: 80%;
+ 
 } 
-
+.lead2 {
+  font-weight: bold;
+  font-size: 22px;
+}
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -58,31 +61,20 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #d8d8d8;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: hsla(0, 100%, 50%, 0.295);
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: rgb(211, 240, 188);
   color: white;
 }
 
-
-
-body .row .list-group span.form-control {
-  display: block;
-  width: 100%;
-  height: 100% !important;
-}
-
-.red {
-  background-color: red;
-}
-.blue {
-  background-color: blue;
+.description {
+  white-space: pre-wrap;
 }
