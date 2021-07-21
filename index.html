@@ -28,16 +28,34 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="current-day" class="lead"></p>
       <p id="current-hour" class="lead2"></p>
-      <div id="clock"></div>
+      <button id="clear" class="clear-btn btn btn-outline-danger btn-sm">Clear The Work Day Scheduler</button>
+      <p>(Clears all of your browser's local storage)</p>
+
+      <!-- hide key on small -->
+      <div class="container key  d-none d-lg-block ">
+
+        <div class="row">
+          <div class="col-4 past"><p>Past</p></div>
+          <div class="col-4 present"><p>Present</p></div>
+          <div class="col-4 future"><p>Future</p></div>
+        </div>
+
+      </div>
+      <!-- end key -->
+
     </header>
+    <!-- header -->
+
+
     <div class="container">
+      <!-- begin time blocks -->
       
 
         <div id="hour8" class="row time-block">
 
                   <span class="hour col-1">8am</span>              
                   <textarea  class="col-8 form-control form-control-lg description"></textarea>
-                  <button class="btn btn-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>     
+                  <button class="btn btn-outline-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>     
             
         </div><!-- row -->
         
@@ -45,7 +63,7 @@
 
                   <span class="hour col-1">9am</span>              
                   <textarea  class="col-8 form-control form-control-lg description"></textarea>
-                  <button  class="btn btn-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
+                  <button  class="btn btn-outline-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
    
         </div><!-- row -->
         
@@ -53,7 +71,7 @@
 
                   <span class="hour col-1">10am</span>              
                   <textarea class="col-8 form-control form-control-lg description"></textarea>
-                  <button  class="btn btn-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
+                  <button  class="btn btn-outline-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
    
         </div><!-- row -->
         
@@ -61,7 +79,7 @@
 
                   <span class="hour col-1">11am</span>              
                   <textarea  class="col-8 form-control form-control-lg description"></textarea>
-                  <button class="btn btn-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
+                  <button class="btn btn-outline-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
    
         </div><!-- row -->
         
@@ -69,7 +87,7 @@
 
                   <span class="hour col-1">12pm</span>              
                   <textarea  class="col-8 form-control form-control-lg description"></textarea>
-                  <button class="btn btn-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
+                  <button class="btn btn-outline-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
    
         </div><!-- row -->
         
@@ -77,7 +95,7 @@
 
                   <span class="hour col-1">1pm</span>              
                   <textarea class="col-8 form-control form-control-lg description"></textarea>
-                  <button class="btn btn-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
+                  <button class="btn btn-outline-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
    
         </div><!-- row -->
 
@@ -86,7 +104,7 @@
 
                   <span class="hour col-1">2pm</span>              
                   <textarea  class="col-8 form-control form-control-lg description"></textarea>
-                  <button class="btn btn-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
+                  <button class="btn btn-outline-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
    
         </div><!-- row -->
 
@@ -95,7 +113,7 @@
 
                   <span class="hour col-1">3pm</span>              
                   <textarea  class="col-8 form-control form-control-lg description"></textarea>
-                  <button class="btn btn-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
+                  <button class="btn btn-outline-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
    
         </div><!-- row -->
 
@@ -104,7 +122,7 @@
 
                   <span class="hour col-1">4pm</span>              
                   <textarea id="four" class="col-8 form-control form-control-lg description"></textarea>
-                  <button class="btn btn-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
+                  <button class="btn btn-outline-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
    
         </div><!-- row -->
 
@@ -113,24 +131,18 @@
 
                   <span class="hour col-1">5pm</span>              
                   <textarea id="five" class="col-8 form-control form-control-lg description"></textarea>
-                  <button class="btn btn-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
+                  <button class="btn btn-outline-dark col-1" type="button"><i class="fas fa-lg fa-save"></i></button>    
    
         </div><!-- row -->
-
-        
-
-
-
-
-
-
 
 
       
     </div>
     <!-- end container -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    
   </body>
 </html>

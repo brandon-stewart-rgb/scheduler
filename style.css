@@ -1,28 +1,41 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
 }
 
-.container {
- 
+.container.key .row {
+  height: 0 !important;
+  padding: 0;
+  margin: 0;
+  
+}
 
+.container.key .row p {
+  margin-top: 18px;
+  text-transform: uppercase;
+}
+
+.container.key .col-4 {
+  border: solid 2px #fff;
 }
 
 textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
+  color: #333;
   border: 1px solid rgb(150, 150, 150);
   border-right: 0;
   padding: 10px;
- 
+  letter-spacing: 1px;
 } 
+
 .lead2 {
   font-weight: bold;
   font-size: 22px;
 }
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -30,9 +43,11 @@ textarea {
   border-radius: 0;
   border-bottom: 10px solid black;
 }
+
 .jumbotron h1 {
   color: #777;
 }
+
 .description{
   white-space: pre-wrap;
 }
@@ -48,6 +63,7 @@ textarea {
   border-top: 1px solid white;
   margin-bottom: 5px;;
 }
+
 .row.last {
   margin-bottom: 70px;
 }
@@ -55,26 +71,33 @@ textarea {
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-bottom: 1px dashed #000000;
+  border-top: 1px dashed #000000;
   padding: 3px;
-  width: 5%;
+  
 }
 
 .past {
   background-color: #d8d8d8;
-  color: white;
+  color: #333;
 }
 
 .present {
   background-color: hsla(0, 100%, 50%, 0.295);
-  color: white;
+  color: #333;
 }
 
 .future {
   background-color: rgb(211, 240, 188);
-  color: white;
+  color: #333;
 }
 
 .description {
   white-space: pre-wrap;
+}
+
+#hour17 {
+  margin-bottom: 50px;
+}
+#clear {
+  margin: 0 0 10px 0;
 }
